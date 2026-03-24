@@ -15,7 +15,6 @@ class CurrencyViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = CurrencySerializer
     
     def get_queryset(self):
-        # Додаємо можливість фільтрувати: /api/currencies/?is_tracked=true
         is_tracked = self.request.query_params.get('is_tracked')
         if is_tracked == 'true':
             return self.queryset.filter(is_tracked=True)

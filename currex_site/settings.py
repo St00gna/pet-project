@@ -1,5 +1,7 @@
 from pathlib import Path
 from celery.schedules import crontab
+import os
+from pathlib import Path
 
 CELERY_BEAT_SCHEDULE = {
     'daily_currency_export': {
@@ -73,11 +75,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'currex_site.wsgi.application'
-
-import os
-from pathlib import Path
-
-BASE_DIR = Path(__file__).resolve().parent.parent
 
 DATABASES = {
     'default': {
