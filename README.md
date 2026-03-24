@@ -106,7 +106,7 @@ docker logs -f currency_celery_worker
 
 ## 📚 API документація
 
--   Swagger UI: http://localhost:8000/api/docs/\
+-   Swagger UI: http://localhost:8000/api/docs/
 -   OpenAPI Schema: http://localhost:8000/api/schema/
 cl
 ------------------------------------------------------------------------
